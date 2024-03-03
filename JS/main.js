@@ -1,4 +1,4 @@
-const x = document.getElementById('menuLink')
+let x = document.getElementById('menuLink')
 function menuClick() {
     if (x.style.display === 'none') {
         x.style.display = 'block'
@@ -8,39 +8,39 @@ function menuClick() {
 }
 
 
-const a = document.getElementById("linkDetail")
-function clickDetail() {
-    if (a.style.display === 'none') {
-        a.style.display = 'block'
+function clickDetail1() {
+    var x = document.getElementById('linkDetail')
+    if (x.style.display === 'none') {
+        x.style.display = 'block'
     } else {
-        a.style.display = 'none'
+        x.style.display = 'none'
     }
 }
 
-const b = document.getElementById("linkDetaill")
-function clickDetaill() {
-    if (b.style.display === 'none') {
-        b.style.display = 'block'
+function clickDetail2() {
+    var x = document.getElementById('linkDetaill')
+    if (x.style.display === 'none') {
+        x.style.display = 'block'
     } else {
-        b.style.display = 'none'
+        x.style.display = 'none'
     }
 }
 
-const c = document.getElementById("linkDetailll")
-function clickDetailll() {
-    if (c.style.display === 'none') {
-        c.style.display = 'block'
+function clickDetail3() {
+    var x = document.getElementById('linkDetailll')
+    if (x.style.display === 'none') {
+        x.style.display = 'block'
     } else {
-        c.style.display = 'none'
+        x.style.display = 'none'
     }
 }
 
-const d = document.getElementById("linkDetaillll")
-function clickDetailll() {
-    if (d.style.display === 'none') {
-        d.style.display = 'block'
+function clickDetail4() {
+    var x = document.getElementById('linkDetaillll')
+    if (x.style.display === 'none') {
+        x.style.display = 'block'
     } else {
-        d.style.display = 'none'
+        x.style.display = 'none'
     }
 }
 
