@@ -8,12 +8,13 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 nav {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 999;
     display: flex;
     align-items: center;
@@ -67,7 +68,8 @@ nav #menu {
 /* Bagian Home */
 
 main {
-    padding: 90px 40px 0px 40px;
+    padding: 90px 0px 0px 0px;
+    width: 100%;
 }
 
 .nav-home {
@@ -98,9 +100,8 @@ main {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.nav-home img{
-    max-width: 300px;
-    height: 300px;
+.nav-home img {
+    width: 300px;
     margin-bottom: 10px;
     border-radius: 100%;
 }
@@ -236,11 +237,12 @@ main {
 footer {
     background-color: #0f0f9cc4;
     padding: 10px;
+    width: 100%;
 }
 
 footer p {
     text-align: center;
-    font-size: 18px;
+    font-size: 17px;
 }
 /* Bagian Footer */
 

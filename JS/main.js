@@ -44,3 +44,6 @@ function clickDetail4() {
     }
 }
 
+let string = 1 + 1;
+
+
