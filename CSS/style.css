@@ -79,8 +79,29 @@ main {
     flex-direction: column;
 }
 
+.nav-home img {
+    width: 220px;
+    margin-bottom: 10px;
+    border-radius: 100%;
+}
+
 .nav-home .content {
     text-align: center;
+}
+
+.nav-home .content i {
+    margin-top: 20px;
+    font-size: 25px;
+    width: 50px;
+    margin: 20px;
+    padding: 13px 0px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #0f0f9cc4;
+    transition: 0.9s ease-in-out;
+}
+
+.nav-home .content i:hover {
+    background-color: #0f0f9cc4;
 }
 
 
@@ -99,20 +120,42 @@ main {
     color: #0f0f9cc4;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/* Bagian Home */
 
-.nav-home img {
-    width: 300px;
-    margin-bottom: 10px;
-    border-radius: 100%;
+/* Jadual Pengajian */
+.jadual {
+    z-index: 999;
+    overflow: hidden;
+    position: fixed;
+    top: 80px;
+    left: 280px;
+    right: 280px;
+    transition: 1s ease-in-out;
 }
 
-/* Bagian Home */
+table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0f9cc4;
+    height: 500px;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 10px;
+}
+
+th, tr, td {
+    padding: 20px 50px;
+    border: 1px solid #fff;
+    text-align: center;
+}
+/* Jadual Pengajian */
 
 /* Bagian About */
 .nav-about {
     display: flex;
     align-items: center;
-    margin: 20px;
+    margin: 65px;
     gap: 20px;
 }
 
@@ -134,8 +177,9 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-content: center;
-    gap: 30px;
-    margin-bottom: 70px;
+    padding: 0px 70px;
+    gap: 70px;
+    margin-bottom: 0px;
 }
 
 .nav-pengurus .content {
@@ -146,7 +190,7 @@ main {
     flex-direction: column;
     background: #fff;
     box-shadow: 0 0 6px #7c7c7cc4;
-    padding: 15px 30px;
+    padding: 15px 20px;
 }
 
 .nav-pengurus .content:hover {
@@ -233,11 +277,63 @@ main {
 /* detail */
 /* Bagian Pengurs */
 
+/* Bagian Contact */
+.nav-contact {
+    display: flex;
+    align-items: center;;
+    margin-bottom: 38px;
+    padding: 0px 65px;
+}
+
+.nav-contact .content-1 {
+    flex: 1 1 50rem;
+}
+
+.nav-contact .content-1 iframe {
+    width: 100%;
+    height: 210px;
+    border: none;
+}
+
+.nav-contact .content-2 {
+    flex: 1 1 10rem;
+    background-color: #0f0f9cc4;
+    padding: 0px 30px;
+}
+
+.nav-contact .content-2 .cal {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-contact .content-2 .cal i {
+    position: relative;
+    font-size: 30px;
+    line-height: 71px;
+    color: #fff;
+}
+
+.nav-contact .content-2 .cal i a {
+    font-size: 15px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    padding: 0px 10px;
+    position: absolute;
+    top: 1px;
+}
+
+/* Bagian Contact */
+
 /* Bagian Footer */
 footer {
     background-color: #0f0f9cc4;
+    backdrop-filter: blur(6px);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
     padding: 10px;
-    width: 100%;
 }
 
 footer p {
@@ -261,13 +357,13 @@ footer p {
         display: none;
         position: absolute;
         flex-direction: column;
-        top: 40px;
+        top: 0;
         left: 0;
         right: 0;
         backdrop-filter: blur(10px);
         box-shadow: 0 0 4px #0f0f9cc4;
         width: 100%;
-        height: 240px;
+        height: 280px;
     }
 
     nav ul .close {
@@ -301,18 +397,13 @@ footer p {
     }
 
     main {
-        padding: 40px 10px 40px 10px;
+        padding: 40px 0px 40px 0px;
         height: auto;
     }
 
+    /* Bagian Home */
     .nav-home {
         margin-top: 70px;
-    }
-
-    .nav-pengurus, .nav-about {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
     }
 
     .nav-home .content h3 {
@@ -326,7 +417,30 @@ footer p {
     .nav-home .content h2 {
         font-size: 20px;
     }
+
+    /* Bagian Jadual Pengajian */
+    .jadual {
+        top: 280px;
+        width: 100%;
+        left: 15px;
+    }
+
+    /* Bagian Pengurus */
+    .nav-pengurus {
+        gap: 30px;
+    }
+
+    .nav-pengurus, .nav-about {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
     
+    /* Bagian About */
+    .nav-about {
+        margin: 20px;
+    }
+
     .nav-about .content-1 {
         flex: none;
     }
@@ -337,7 +451,7 @@ footer p {
 
     .nav-about .content-2 h1 {
         color: #0f0f9cc4;
-        font-size: 25px;
+        font-size: 30px;
     }
 
     /* Bagian Detail */
@@ -345,5 +459,34 @@ footer p {
         left: 10px;
         right: 10px;
     }
-    /* Bagian Detail */
+
+    /* Bagian Contact */
+    .nav-contact {
+        flex-wrap: wrap;
+        padding: 0px 20px;
+    }
+
+    .nav-contact .content-2 {
+        padding: 10px 0px;
+    }
+
+    .nav-contact .content-2 .cal {
+        margin-top: -5px;
+        flex-direction: row;
+    }
+
+    .nav-contact .content-2 .cal i {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .nav-contact .content-2 .cal i a {
+        position: relative;
+        font-size: 10px;
+    }
 }

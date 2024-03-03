@@ -44,6 +44,15 @@ function clickDetail4() {
     }
 }
 
-let string = 1 + 1;
+const linkJadwal = document.getElementById("linkJadwal")
+const tombolJadwal = document.getElementById("tombolJadwal")
 
+linkJadwal.style.maxHeight = "0px" 
 
+tombolJadwal.addEventListener("click", () => {
+    if (linkJadwal.style.maxHeight === "800px") {
+        linkJadwal.style.maxHeight = "0px";
+    } else {
+        linkJadwal.style.maxHeight = "800px"
+    }
+})
