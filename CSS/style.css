@@ -127,7 +127,7 @@ main {
     z-index: 999;
     overflow: hidden;
     position: fixed;
-    top: 80px;
+    top:60px;
     left: 280px;
     right: 280px;
     transition: 1s ease-in-out;
@@ -142,6 +142,14 @@ table {
     backdrop-filter: blur(10px);
     color: #fff;
     padding: 10px;
+}
+
+.jadual h1 {
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background: black;
 }
 
 th, tr, td {
@@ -420,9 +428,26 @@ footer p {
 
     /* Bagian Jadual Pengajian */
     .jadual {
-        top: 280px;
-        width: 100%;
+        top: 240px;
         left: 15px;
+        right: 15px;
+    }
+
+    table {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #0f0f9cc4;
+        height: 369px;
+        backdrop-filter: blur(10px);
+        color: #fff;
+        padding: 10px ;
+    }
+
+    th, tr, td {
+        padding: 14px 13px;
+        border: 1px solid #fff;
+        text-align: center;
     }
 
     /* Bagian Pengurus */
